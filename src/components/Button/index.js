@@ -1,5 +1,10 @@
 import "./index.css";
 
-export const Button = ({ children }) => {
-  return <button className="button-container"> {children} </button>;
+export const Button = ({ children, onClick }) => {
+  return (
+    <button onClick={onClick} className="button-container">
+      {" "}
+      {children}{" "}
+    </button>
+  );
 };

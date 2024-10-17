@@ -1,7 +1,22 @@
+import { useState } from "react";
 import "./index.css";
-import { Button } from "../../components/Button";
+import { useNavigate } from "react-router-dom";
+import { Button, Input } from "../../components";
 
 export const HomeScreen = () => {
+  const [userName, setUserName] = useState("");
+
+  const navigate = useNavigate();
+
+  const onClickContinue = () => {
+    if (userName.length < 3) {
+      alert("Username deve conter mais de 3 caracteres");
+      return;
+    }
+    localStorage.setItem("@Supermarket-list:userName", userName);
+    navigate("/List");
+  };
+
   return (
     <div className="home-screen-container">
       <div className="home-screen-content-container">
@@ -16,8 +31,17 @@ export const HomeScreen = () => {
         <h3 className="home-screen-subtitle">
           Ajudamos você a organizar sua lista de compras de forma descomplicada.
         </h3>
-        <div className="home-screen-form-container">
-          <Button>Continuar</Button>
+        <h3 className="home-screen-subtitle-description">
+          Digite abaixo seu usuário para ter acesso a sua lista de compras:
+        </h3>
+        <Input
+          onChange={(text) => setUserName(text)}
+          value={userName}
+          label="Username"
+          placeholder="Ex: usuário 1"
+        />
+        <div className="home-screen-button-container">
+          <Button onClick={onClickContinue}>Continuar</Button>
         </div>
       </div>
     </div>

@@ -1,11 +1,15 @@
 import "./App.css";
-import { HomeScreen } from "./Screens/Home";
+import { HomeScreen, ListScreen } from "./Screens";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <HomeScreen />
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<HomeScreen />} />
+        <Route path="/List" element={<ListScreen />} />
+      </Routes>
+    </Router>
   );
 }
 
