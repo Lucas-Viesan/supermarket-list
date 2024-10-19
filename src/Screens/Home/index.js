@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./index.css";
 import { useNavigate } from "react-router-dom";
 import { Button, Input } from "../../components";
+import { SAVE_USERNAME_PATH } from "../../services/constants";
 
 export const HomeScreen = () => {
   const [userName, setUserName] = useState("");
@@ -13,7 +14,7 @@ export const HomeScreen = () => {
       alert("Username deve conter mais de 3 caracteres");
       return;
     }
-    localStorage.setItem("@Supermarket-list:userName", userName);
+    localStorage.setItem(SAVE_USERNAME_PATH, userName);
     navigate("/List");
   };
 
