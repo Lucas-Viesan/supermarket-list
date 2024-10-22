@@ -40,6 +40,9 @@
   margin-bottom: 16px;
 }
 
+.home-screen-input-container {
+  width: 452px;
+}
 .home-screen-button-container {
   width: 452px;
   margin-top: 24px;

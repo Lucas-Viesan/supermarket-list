@@ -1,9 +1,10 @@
 import "./index.css";
 import { useState, useEffect } from "react";
 import { getList } from "../../services/request";
-import { ListCard, Loader, ListRender, Button } from "../../components";
+import { ListCard, Loader, ListRender, Button, Modal } from "../../components";
 
 export const ListScreen = () => {
+  const [modalVisible, setModalVisible] = useState(false);
   const [loading, setLoading] = useState(true);
   const [listData, setListData] = useState([]);
   const options = [
@@ -60,6 +61,15 @@ export const ListScreen = () => {
   useEffect(() => {
     loadListItems();
   }, []);
+
+  const onClickAddButton = () => {
+    setModalVisible(true);
+  };
+
+  const onCloseModal = () => {
+    setModalVisible(false);
+  };
+
   return (
     <div className="list-screen-container">
       <div className="list-screen-content-container">
@@ -74,13 +84,14 @@ export const ListScreen = () => {
             <h1 className="list-screen-header-title">Lista Supermercado</h1>
           </div>
           <div className="list-screen-button-container">
-            <Button>Adicionar</Button>
+            <Button onClick={onClickAddButton}>Adicionar</Button>
           </div>
         </div>
         <div className="list-screen-list-container">
           {loading ? <Loader /> : <ListRender list={listData} />}
         </div>
       </div>
+      {modalVisible && <Modal onClose={onCloseModal} />}
     </div>
   );
 };
