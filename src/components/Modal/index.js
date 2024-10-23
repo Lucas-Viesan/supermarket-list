@@ -25,7 +25,10 @@ export const Modal = ({ onClose, item }) => {
   const callAddItem = async () => {
     const validate = valideBeforeSave();
     if (validate) {
-      const result = await createItem({ name, quantity: Number(quantity) });
+      const result = await createItem({
+        name,
+        quantity: Number(quantity),
+      });
       if (!result.error) {
         alert("Item salvo com sucesso");
         onClose();

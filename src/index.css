@@ -51,3 +51,13 @@ h3 {
   visibility: hidden;
   width: 0;
 }
+
+@media screen and (max-width: 420px) {
+  h1 {
+    font-size: 18px;
+  }
+
+  h3 {
+    font-size: 12px;
+  }
+}
