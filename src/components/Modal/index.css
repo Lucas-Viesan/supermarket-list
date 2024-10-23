@@ -44,6 +44,11 @@
   cursor: pointer;
 }
 
-.modal-spacer {
-  height: 57vh;
+.buttons-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 10vh;
+  width: 100%;
+  margin-top: 45vh;
 }

@@ -1,11 +1,31 @@
 .button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   height: 42px;
   background-color: #7785db;
   font-size: 14px;
-  color: #ffffff;
   font-weight: bold;
   font-family: "Avenir";
   border-radius: 24px;
-  border: 0px;
+  border: 1px solid #7785db;
+  cursor: pointer;
+}
+
+.main {
+  background-color: #7785db;
+  color: white;
+}
+
+.outline {
+  background-color: white;
+  color: #7785db;
+}
+
+.button-icon {
+  height: 24px;
+  width: 24px;
+  object-fit: contain;
+  margin-right: 6px;
 }
