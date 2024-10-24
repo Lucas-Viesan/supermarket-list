@@ -32,6 +32,12 @@
   margin-bottom: 12px;
 }
 
+.modal-valor-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .modal-close-button {
   height: 24px;
   width: 24px;
@@ -50,22 +56,29 @@
   justify-content: space-between;
   height: 10vh;
   width: 100%;
-  margin-top: 45vh;
+  margin-top: 30vh;
 }
 
 @media screen and (max-width: 830px) {
   .modal-content {
     width: 60vw;
   }
+  .modal-valor-item {
+    height: 20vh;
+  }
+  .buttons-container {
+    height: 8vh;
+    margin-top: 30vh;
+  }
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 400px) {
   .modal-content {
     width: 100%;
   }
 
   .buttons-container {
-    height: 12vh;
-    margin-top: 50vh;
+    height: 10vh;
+    margin-top: 15vh;
   }
 }

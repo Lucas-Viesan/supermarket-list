@@ -7,6 +7,7 @@ import { createItem, updateItem, deleteItem } from "../../services/request";
 export const Modal = ({ onClose, item }) => {
   const [name, setName] = useState("");
   const [quantity, setQuantity] = useState(0);
+  const [inputValue, setInputValue] = useState(0);
 
   const valideBeforeSave = () => {
     if (name.length < 3) {
@@ -62,8 +63,8 @@ export const Modal = ({ onClose, item }) => {
 
   useEffect(() => {
     if (item?.name && item?.quantity) {
-      setName(item?.name);
-      setQuantity(item?.quantity);
+      setName(item.name);
+      setQuantity(item.quantity);
     }
   }, [item]);
 
@@ -86,6 +87,18 @@ export const Modal = ({ onClose, item }) => {
           label="Quantidade"
           type="number"
         />
+        <Input
+          onChange={(text) => setInputValue(text)}
+          value={inputValue}
+          label="Preço"
+          type="number"
+        />
+        <h1 className="modal-valor-item">
+          {new Intl.NumberFormat("pt-BR", {
+            style: "currency",
+            currency: "BRL",
+          }).format(inputValue * quantity)}
+        </h1>
         <div className="buttons-container">
           {item && (
             <Button icon="trash" variant="outline" onClick={callDeleteItem}>
