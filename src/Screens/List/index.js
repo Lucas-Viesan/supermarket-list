@@ -1,7 +1,7 @@
 import "./index.css";
 import { useState, useEffect } from "react";
 import { getList, updateItem } from "../../services/request";
-import { ListCard, Loader, ListRender, Button, Modal } from "../../components";
+import { Loader, ListRender, Button, Modal } from "../../components";
 
 export const ListScreen = () => {
   const [modalVisible, setModalVisible] = useState(false);
