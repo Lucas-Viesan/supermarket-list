@@ -1,5 +1,5 @@
 # Supermarket List
-
+https://github.com/user-attachments/assets/549b4033-38c6-4ca4-b3a7-a5932c6aefb1
 ## Introdução
 
 O Supermarket List é um aplicativo web desenvolvido para criar e gerenciar listas de compras de forma prática e eficiente. O projeto tem como objetivo facilitar a organização das compras em supermercados, permitindo que os usuários adicionem, editem e removam itens, além de manter um controle simplificado das quantidades e categorias.
