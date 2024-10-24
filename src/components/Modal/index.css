@@ -72,13 +72,13 @@
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 420px) {
   .modal-content {
     width: 100%;
   }
 
   .buttons-container {
     height: 10vh;
-    margin-top: 15vh;
+    margin-top: 40vh;
   }
 }
