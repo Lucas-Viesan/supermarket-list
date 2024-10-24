@@ -1,70 +1,53 @@
-# Getting Started with Create React App
+# Supermarket List
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Introdução
 
-## Available Scripts
+O Supermarket List é um aplicativo web desenvolvido para criar e gerenciar listas de compras de forma prática e eficiente. O projeto tem como objetivo facilitar a organização das compras em supermercados, permitindo que os usuários adicionem, editem e removam itens, além de manter um controle simplificado das quantidades e categorias.
 
-In the project directory, you can run:
+## Funcionalidades
 
-### `npm start`
+- Adicionar Itens: Insira novos itens à lista de compras com nome, quantidade e categoria.
+- Editar Itens: Atualize ou altere as informações dos itens já existentes na lista.
+- Remover Itens: Exclua itens da lista após a compra ou caso não sejam mais necessários.
+- Persistência de Dados: A lista é salva no local storage, garantindo que os itens permaneçam após recarregar a página.
+- Interface Intuitiva: Interface de usuário amigável e fácil de usar, feita para uma boa experiência em dispositivos móveis e desktops.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Tecnologias Utilizadas
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- React.js: Biblioteca JavaScript para construção da interface de usuário.
+- CSS3: Estilização do layout e design responsivo.
+- Axios: é uma biblioteca JavaScript usada para fazer requisições HTTP a servidores a partir de navegadores ou ambientes Node.js.
 
-### `npm test`
+## Instruções para executar
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Siga os passos abaixo para rodar o projeto localmente:
 
-### `npm run build`
+1. Clone o repositório:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
+git clone https://github.com/seuusuario/supermarket-list.git
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. Navegue até o diretório do projeto:
 
-### `npm run eject`
+```
+cd supermarket-list
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. Instale as dependências:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```
+npm install
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+4. Execute o servidor de desenvolvimento:
 
-## Learn More
+```
+npm start
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Deploy
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+O projeto está disponível online e pode ser acessado diretamente através deste link: https://supermarket-list-lucasviesan.netlify.app/
